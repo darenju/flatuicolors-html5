@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+}
+#format, #color {
+  width: 50%;
+}
+#colors {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.colors-item {
+  cursor: pointer;
+  position: relative;
+  height: 25%;
+  width: 20%;
+}
+.colors-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.colors-item:hover::before {
+  opacity: 0.25;
+}
+.colors-item-label {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
