@@ -17,11 +17,11 @@ body {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 .colors-item {
   cursor: pointer;
   position: relative;
-  height: 25%;
   width: 20%;
 }
 .colors-item::before {
